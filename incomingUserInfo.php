@@ -22,6 +22,7 @@
 <body class="container py-5">
   <h1>Il mio primo form con PHP!</h1>
   <form action="readUserInfo.php" method="POST">
+
     <!-- email -->
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -29,24 +30,23 @@
       name="email">
       <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
     </div>
-    <!-- password -->
-    <!-- <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1"
-      name="password">
-    </div> -->
+
+    <!-- censoredWord -->
     <div class="mb-3">
       <label for="exampleFormControlTextarea1" class="form-label">Insert censored word</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"
       name="censoredWord"></textarea>
     </div>
+
     <!-- testo da modificare -->
     <div class="mb-3">
       <label for="exampleFormControlTextarea1" class="form-label">Example text area</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
       name="text"></textarea>
     </div>
+
     <button type="submit" class="btn btn-primary">Submit</button>
+    
   </form>
 </body>
 </html>
