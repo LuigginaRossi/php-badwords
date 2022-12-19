@@ -19,22 +19,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-<form action="incomingInfoUser.php" method="POST">
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+<body class="container py-5">
+  <h1>Il mio primo form con PHP!</h1>
+  <form action="readUserInfo.php" method="POST">
+    <!-- email -->
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+      name="email">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <!-- password -->
+    <!-- <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1"
+      name="password">
+    </div> -->
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Insert censored word</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"
+      name="censoredWord"></textarea>
+    </div>
+    <!-- testo da modificare -->
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Example text area</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+      name="text"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 </body>
 </html>
